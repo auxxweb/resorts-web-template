@@ -762,10 +762,10 @@ h3 {
   padding: 0;
 }
 .slider_bg_1 {
-  background-image: url(../img/banner1/greenary.jpeg);
+  background-image: url(../img/banner1/green.jpg);
 }
 .slider_bg_2 {
-  background-image: url(../img/banner/banner2.png);
+  background-image: url(../img/banner1/IMG-20241005-WA0053_enhanced.jpg);
 }
 .slider_area .single_slider {
   height: 100vh;
@@ -887,7 +887,7 @@ h3 {
   margin-left: 10px;
 }
 .about_bg_1 {
-  background-image: url(../img/banner/about_banner.png);
+  background-image: url(../img/banner);
 }
 .about_info_area {
   padding-left: 387px;
@@ -1570,13 +1570,13 @@ h3 {
   color: #fff;
 }
 .breadcam_bg {
-  background-image: url(../img/banner/bradcam.png);
+  background-image: url(../img/about/woman-picking-tea-leaves-by-hand-green-tea-farm.jpg);
 }
 .breadcam_bg_1 {
-  background-image: url(../img/banner/bradcam2.png);
+  background-image: url(../img/banner1/IMG-20241005-WA0053_enhanced.jpg);
 }
 .breadcam_bg_2 {
-  background-image: url(../img/banner/bradcam3.png);
+  background-image: url(../img/about/42553.jpg);
 }
 .bradcam_area {
   padding: 170px;
