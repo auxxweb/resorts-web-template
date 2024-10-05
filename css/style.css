@@ -234,7 +234,7 @@ h3 {
   margin-bottom: 20px;
 }
 .boxed-btn {
-  background: #07b18d;
+  background: #006634;
   color: #ffffff;
   border: 1px solid #ffffff;
   display: inline-block;
@@ -252,8 +252,8 @@ h3 {
 }
 .boxed-btn:hover {
   background: #ffffff;
-  color: #07b18d !important;
-  border: 1px solid #07b18d;
+  color: #006634 !important;
+  border: 1px solid #006634;
 }
 .boxed-btn:focus {
   outline: none;
@@ -492,7 +492,7 @@ h3 {
   width: 100%;
   top: 0;
   z-index: 9;
-  padding-top: 28px;
+  background-color: #0066346e; 
 }
 @media (max-width: 767px) {
   .header-area {
@@ -505,7 +505,7 @@ h3 {
   }
 }
 .header-area .main-header-area {
-  padding: 0 50px 0 0;
+  padding: 0 50px 0 0;   
 }
 @media (max-width: 767px) {
   .header-area .main-header-area {
@@ -519,7 +519,7 @@ h3 {
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .header-area .main-header-area {
-    padding: 0 20px;
+    padding: 20px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1500px) {
@@ -586,7 +586,7 @@ h3 {
   margin-left: 30px;
 }
 .header-area .main-header-area .book_room .book_btn a {
-  background: #07b18d;
+  background: #006634;
   padding: 12px 26px;
   border-radius: 9px;
   font-size: 14px;
@@ -596,7 +596,7 @@ h3 {
 }
 .header-area .main-header-area .book_room .book_btn a:hover {
   background: #ffffff;
-  color: #07b18d;
+  color: #006634;
   border-radius: 9px;
   border: 1px solid #ffffff;
 }
@@ -739,7 +739,7 @@ h3 {
   -webkit-transition: transform 500ms ease, background 500ms ease;
   box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  background: #07b18d;
+  background: #006634;
 }
 @media (max-width: 767px) {
   .header-area .main-header-area.sticky {
@@ -753,12 +753,21 @@ h3 {
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .header-area .main-header-area.sticky {
-    padding: 10px 20px;
+    padding: 10px 10px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1500px) {
   .header-area .main-header-area.sticky {
     padding: 10px 20px;
+  }
+}
+.logo-image{
+  width: 5rem;
+}
+
+@media (max-width: 767px) {
+  .logo-image{
+    width: 4rem!important;
   }
 }
 .header-area .main-header-area.sticky .main-menu {
@@ -1448,7 +1457,7 @@ h3 {
   border: 1px solid #e0e0e0;
 }
 .footer {
-  background: #07b18d;
+  background: #006634;
 }
 .footer .footer_top {
   padding-top: 145px;
@@ -1522,7 +1531,7 @@ h3 {
   border: solid 1px #ffffff;
   font-size: 14px;
   color: #fff;
-  background: #07b18d;
+  background: #006634;
   padding: 10px;
   padding: 0 22px;
   cursor: pointer;
