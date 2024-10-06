@@ -201,7 +201,7 @@
               <h3>Luxurious Rooms at Misty Village</h3>
               <!-- <p>Enjoy a comfortable stay in our spacious and well-appointed rooms with breathtaking views.</p> -->
               <ul>
-                <li>Bbedrooms with attached toilet</li>
+                <li>Bedrooms with attached toilet</li>
                 <li>Common halls on every floor</li>
                 <li>private balconies</li>
                 <li>Kitchen and cozy restaurant</li>
@@ -484,13 +484,13 @@
               </div>
             </div>
             <div class="col-xl-4 col-md-6 col-lg-4">
-              <div class="footer_widget">
+              <!-- <div class="footer_widget">
                 <h3 class="footer_title">
                   Newsletter
                 </h3>
                 <form action="#" class="newsletter_form">
-                  <input
-                    style="color: grey !important;"
+                  <input 
+                    style="color: rgb(75, 75, 75) !important; "
                     type="text"
                     placeholder="Enter your mail"
                   />
@@ -499,7 +499,33 @@
                 <p class="newsletter_text">
                   Subscribe newsletter to get updates
                 </p>
+              </div> -->
+              <div class="footer_widget">
+                <h3 class="footer_title">Newsletter</h3>
+                <div
+                id="successMessage"
+                style="display: none;"
+                class="alert alert-success text-center"
+              >
+                Thank you! for your enquiry.
               </div>
+                <form  id="contactform" class="newsletter_form">
+                  <input
+                    style="color: rgb(75, 75, 75) !important;"
+                    type="text"
+                    placeholder="Enter your mail"
+                  />
+                  <button type="submit">Enquiry</button>
+                </form>
+                <p class="newsletter_text">Subscribe newsletter to get updates</p>
+              </div>
+              
+              <style>
+                .newsletter_form input::placeholder {
+                  color: #ccc !important; /* Adjust color as needed */
+                }
+              </style>
+
             </div>
           </div>
         </div>
@@ -601,7 +627,7 @@
               <div class="col-xl-12">
                 <select class="form-select wide" id="default-select" class="">
                   <option data-display="Room type">Room type</option>
-                  <option value="1">Laxaries Rooms</option>
+                  <option value="1">Luxuries Rooms</option>
                   <option value="2">Deluxe Room</option>
                   <option value="3">Signature Room</option>
                   <option value="4">Couple Room</option>
@@ -640,7 +666,7 @@
     <script src="js/gijgo.min.js"></script>
 
     <!--contact js-->
-    <script src="js/contact.js"></script>
+    <!-- <script src="js/contact.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
     <script src="js/jquery.form.js"></script>
     <script src="js/jquery.validate.min.js"></script>
@@ -659,6 +685,42 @@
         icons: {
           rightIcon: '<span class="fa fa-caret-down"></span>',
         },
+      })
+    </script> -->
+    <script>
+      $(document).ready(function () {
+        $('#contactform1').submit((e) => {
+          e.preventDefault()
+
+          const loading = document.getElementById('loading1')
+          const btn = document.getElementById('s-btn1')
+          const successMessage = document.getElementById('successMessage1') // Updated ID
+
+          loading.style.display = 'block'
+          btn.style.display = 'none'
+
+          $.ajax({
+            url:
+              'https://script.google.com/macros/s/AKfycbyH6foigFQ6qbqTUmIFdKD7UqxGi5pgH8EmNKP2-ZwYHhmf_Qq9hfnJ1JyEBcUvRuzl/exec',
+            data: $('#contactform1').serialize(),
+            method: 'post',
+            success: function (response) {
+              if (successMessage) {
+                successMessage.style.display = 'block' // Show success message
+              }
+              // Clear form fields
+              $('#contactform1')[0].reset()
+
+              btn.style.display = 'block'
+              loading.style.display = 'none'
+            },
+            error: function (err) {
+              loading.style.display = 'none'
+              btn.style.display = 'block'
+              alert('Something went wrong. Please try again.')
+            },
+          })
+        })
       })
     </script>
   </body>
