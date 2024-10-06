@@ -364,22 +364,40 @@
             </div>
             <div class="col-xl-4 col-md-6 col-lg-4">
               <div class="footer_widget">
-                <h3 class="footer_title">
-                  Newsletter
-                </h3>
-                <form action="#" class="newsletter_form">
+                <h3 class="footer_title">Newsletter</h3>
+                <div
+                  id="successMessage1"
+                  style="display: none;"
+                  class="alert alert-success text-center"
+                >
+                  Thank you! for Subscribe
+                </div>
+                <form method="post" id="contactform1" class="newsletter_form">
                   <input
-                    style="color: grey !important;"
-                    type="text"
+                    style="color: rgb(75, 75, 75) !important;"
+                    type="email"
+                    name="email"
                     placeholder="Enter your mail"
                   />
-                  <button type="submit">Enquiry</button>
+                  <button id="s-btn1">
+                    Subscribe
+                  </button>
+
+                  <button style="display: none;" id="loading1">
+                    Subscribing...
+                  </button>
                 </form>
                 <p class="newsletter_text">
                   Subscribe newsletter to get updates
                 </p>
               </div>
-            </div>
+
+              <style>
+                .newsletter_form input::placeholder {
+                  color: #ccc !important; /* Adjust color as needed */
+                }
+              </style>
+        </div>
           </div>
         </div>
       </div>
@@ -480,17 +498,39 @@
 
     <script src="js/main.js"></script>
     <script>
-      $('#datepicker').datepicker({
-        iconsLibrary: 'fontawesome',
-        icons: {
-          rightIcon: '<span class="fa fa-caret-down"></span>',
-        },
-      })
-      $('#datepicker2').datepicker({
-        iconsLibrary: 'fontawesome',
-        icons: {
-          rightIcon: '<span class="fa fa-caret-down"></span>',
-        },
+      $(document).ready(function () {
+        $('#contactform1').submit((e) => {
+          e.preventDefault()
+
+          const loading = document.getElementById('loading1')
+          const btn = document.getElementById('s-btn1')
+          const successMessage = document.getElementById('successMessage1') // Updated ID
+
+          loading.style.display = 'block'
+          btn.style.display = 'none'
+
+          $.ajax({
+            url:
+              'https://script.google.com/macros/s/AKfycbyH6foigFQ6qbqTUmIFdKD7UqxGi5pgH8EmNKP2-ZwYHhmf_Qq9hfnJ1JyEBcUvRuzl/exec',
+            data: $('#contactform1').serialize(),
+            method: 'post',
+            success: function (response) {
+              if (successMessage) {
+                successMessage.style.display = 'block' // Show success message
+              }
+              // Clear form fields
+              $('#contactform1')[0].reset()
+
+              btn.style.display = 'block'
+              loading.style.display = 'none'
+            },
+            error: function (err) {
+              loading.style.display = 'none'
+              btn.style.display = 'block'
+              alert('Something went wrong. Please try again.')
+            },
+          })
+        })
       })
     </script>
   </body>
