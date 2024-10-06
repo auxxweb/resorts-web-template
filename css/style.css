@@ -15,6 +15,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
   font-style: normal;
+  overflow-x: hidden;
 }
 .img {
   max-width: 100%;
@@ -228,7 +229,7 @@ h3 {
 }
 .owl-carousel:hover .owl-nav div:hover {
   color: #fff;
-  background: #009dff;
+  background: #006634;
 }
 .mb-20px {
   margin-bottom: 20px;
@@ -262,7 +263,7 @@ h3 {
   width: 220px;
 }
 .boxed-btn3 {
-  background: #009dff;
+  background: #006634;
   color: #fff;
   display: inline-block;
   padding: 18px 44px;
@@ -270,7 +271,7 @@ h3 {
   font-size: 14px;
   font-weight: 400;
   border: 0;
-  border: 1px solid #009dff;
+  border: 1px solid #006634;
   letter-spacing: 3px;
   text-align: center;
   color: #fff !important;
@@ -283,8 +284,8 @@ h3 {
 }
 .boxed-btn3:hover {
   background: #fff;
-  color: #009dff !important;
-  border: 1px solid #009dff;
+  color: #006634 !important;
+  border: 1px solid #006634;
 }
 .boxed-btn3:focus {
   outline: none;
@@ -331,25 +332,25 @@ h3 {
   left: 0;
 }
 .line-button:hover {
-  color: #009dff;
+  color: #006634;
 }
 .line-button:hover::before {
-  background: #009dff;
+  background: #006634;
 }
 .book_now {
   display: inline-block;
   font-size: 14px;
-  color: #009dff;
-  border: 1px solid #009dff;
+  color: #006634;
+  border: 1px solid #006634;
   text-transform: capitalize;
   padding: 10px 25px;
 }
 .book_now:hover {
-  background: #009dff;
+  background: #006634;
   color: #fff;
 }
 .section_title span {
-  color: #009dff;
+  color: #006634;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 15px;
@@ -411,10 +412,10 @@ h3 {
 }
 .slicknav_menu .slicknav_nav a:hover {
   background: transparent;
-  color: #009dff;
+  color: #006634;
 }
 .slicknav_menu .slicknav_nav a.active {
-  color: #009dff;
+  color: #006634;
 }
 @media (max-width: 767px) {
   .slicknav_menu .slicknav_nav a i {
@@ -492,7 +493,7 @@ h3 {
   width: 100%;
   top: 0;
   z-index: 9;
-  background-color: #0066346e; 
+  background-color: #0066346e;
 }
 @media (max-width: 767px) {
   .header-area {
@@ -505,7 +506,7 @@ h3 {
   }
 }
 .header-area .main-header-area {
-  padding: 0 50px 0 0;   
+  padding: 0 50px 0 0;
 }
 @media (max-width: 767px) {
   .header-area .main-header-area {
@@ -761,13 +762,13 @@ h3 {
     padding: 10px 20px;
   }
 }
-.logo-image{
+.logo-image {
   width: 5rem;
 }
 
 @media (max-width: 767px) {
-  .logo-image{
-    width: 4rem!important;
+  .logo-image {
+    width: 4rem !important;
   }
 }
 .header-area .main-header-area.sticky .main-menu {
@@ -1094,7 +1095,7 @@ h3 {
   transform: scale(1.1);
 }
 .video_bg {
-  background-image: url(../img/video/video.png);
+  background-image: url("../img/banner1/WhatsApp Image 2024-10-05 at 7,25,13 PM (1)_enhanced.jpeg");
 }
 .video_area {
   padding: 250px 0;
@@ -1134,7 +1135,7 @@ h3 {
   background: #fff;
   line-height: 60px;
   font-size: 15px;
-  color: #009dff;
+  color: #006634;
   display: inline-block;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1250,7 +1251,7 @@ h3 {
   visibility: hidden;
 }
 .features_room .rooms_here .single_rooms .room_thumb .room_heading a:hover {
-  color: #009dff;
+  color: #006634;
 }
 .features_room .rooms_here .single_rooms:hover img {
   width: 100%;
@@ -1330,7 +1331,7 @@ h3 {
   }
 }
 .forQuery .Query_border .phone_num a {
-  background: #009dff;
+  background: #006634;
   color: #fff;
   padding: 12px 53px;
   border-radius: 30px;
@@ -1339,8 +1340,8 @@ h3 {
   border: 1px solid transparent;
 }
 .forQuery .Query_border .phone_num a:hover {
-  color: #009dff;
-  border: 1px solid #009dff;
+  color: #006634;
+  border: 1px solid #006634;
   background: #fff;
 }
 .instragram_area {
@@ -1559,7 +1560,7 @@ h3 {
   }
 }
 .footer .copy-right_text .copy_right a {
-  color: #009dff;
+  color: #006634;
 }
 .footer .copy-right_text .socail_links {
   text-align: right;
@@ -1583,13 +1584,13 @@ h3 {
   font-size: 18px;
 }
 .breadcam_bg {
-  background-image: url(../img/about/woman-picking-tea-leaves-by-hand-green-tea-farm.jpg);
+  background-image: url(../img/banner1/banner-view.jpg);
 }
 .breadcam_bg_1 {
   background-image: url(../img/banner1/bed.jpg);
 }
 .breadcam_bg_2 {
-  background-image: url(../img/about/42553.jpg);
+  background-image: url(../img/banner1//green.jpg);
 }
 .bradcam_area {
   padding: 170px;
@@ -2832,7 +2833,7 @@ h6 {
 }
 .blog_area a:hover,
 .blog_area a :hover {
-  background: -webkit-linear-gradient(131deg, #009dff 0%, #009dff 99%);
+  background: -webkit-linear-gradient(131deg, #006634 0%, #006634 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
@@ -3192,7 +3193,7 @@ h6 {
   color: #ff8b23;
 }
 .blog_details a:hover {
-  color: #009dff;
+  color: #006634;
 }
 .blog_details h2 {
   font-size: 18px;
@@ -3240,7 +3241,7 @@ h6 {
   left: 10px;
   display: block;
   color: #fff;
-  background-color: #009dff;
+  background-color: #006634;
   padding: 8px 15px;
   border-radius: 5px;
 }
@@ -3404,7 +3405,7 @@ h6 {
   font-size: 13px;
 }
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-  background: #009dff;
+  background: #006634;
   color: #fff !important;
   -webkit-text-fill-color: #fff;
   text-decoration: none;
@@ -3579,7 +3580,7 @@ h6 {
   display: inline-block;
 }
 .single-post-area .blog-author a:hover {
-  color: #009dff;
+  color: #006634;
 }
 .single-post-area .blog-author p {
   margin-bottom: 0;
@@ -3874,7 +3875,7 @@ h6 {
   }
 }
 .blog_part .single-home-blog .card .card-body a {
-  color: #009dff;
+  color: #006634;
   text-transform: uppercase;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -3895,7 +3896,7 @@ h6 {
   height: 10px;
   top: 5px;
   left: 0;
-  background-color: #009dff;
+  background-color: #006634;
   border-radius: 50%;
 }
 .blog_part .single-home-blog .card span {
@@ -3995,4 +3996,25 @@ h6 {
 .blog_part .single-home-blog .card ul li span {
   margin-right: 10px;
   font-size: 12px;
+}
+
+.room-card{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 13px;
+}
+
+.room-card:hover {
+  -webkit-box-shadow: -8px 7px 19px -5px rgba(0, 102, 52, 1);
+  -moz-box-shadow: -8px 7px 19px -5px rgba(0, 102, 52, 1);
+  box-shadow: -8px 7px 19px -5px rgba(0, 102, 52, 1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 13px;
+}
+.fd-img:hover{
+  -webkit-box-shadow: -8px 7px 19px -5px rgba(0, 102, 52, 1);
+  -moz-box-shadow: -8px 7px 19px -5px rgba(0, 102, 52, 1);
+  box-shadow: -8px 7px 19px -5px rgba(0, 102, 52, 1);
+  
 }
