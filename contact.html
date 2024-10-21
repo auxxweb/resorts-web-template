@@ -481,7 +481,7 @@
         },
       })
     </script>
-    <script>
+    <!-- <script>
       $(document).ready(function () {
         $('#contactform').submit((e) => {
           e.preventDefault()
@@ -516,7 +516,57 @@
           })
         })
       })
+    </script> -->
+    <script>
+      $(document).ready(function () {
+        $('#contactform').submit((e) => {
+          e.preventDefault()
+    
+          // Validation
+          const name = $('#name').val().trim();
+          const email = $('#email').val().trim();
+          const phoneNumber = $('#phoneNumber').val().trim();
+          const message = $('#message').val().trim();
+    
+          // Check if all fields have values
+          if (!name || !email || !phoneNumber || !message) {
+            alert('Please fill in all fields.');
+            return;
+          }
+    
+          const loading = document.getElementById('loading');
+          const btn = document.getElementById('s-btn');
+          const successMessage = document.getElementById('successMessage');
+    
+          loading.style.display = 'block';
+          btn.style.display = 'none';
+    
+          $.ajax({
+            url:
+              'https://script.google.com/macros/s/AKfycbyH6foigFQ6qbqTUmIFdKD7UqxGi5pgH8EmNKP2-ZwYHhmf_Qq9hfnJ1JyEBcUvRuzl/exec',
+            data: $('#contactform').serialize(),
+            method: 'post',
+            success: function (response) {
+              if (successMessage) {
+                successMessage.style.display = 'block';
+              }
+    
+              // Clear form fields
+              $('#contactform')[0].reset();
+    
+              btn.style.display = 'block';
+              loading.style.display = 'none';
+            },
+            error: function (err) {
+              loading.style.display = 'none';
+              btn.style.display = 'block';
+              alert('Something went wrong. Please try again.');
+            },
+          });
+        });
+      });
     </script>
+    
     <script>
       $(document).ready(function () {
         $('#contactform1').submit((e) => {
